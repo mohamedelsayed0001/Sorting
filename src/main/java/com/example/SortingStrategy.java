@@ -1,4 +1,5 @@
 package com.example;
+
 interface SortingStrategy {
-    void sort(int[] array);
+    void sort(int[] array, boolean showSteps);
 }

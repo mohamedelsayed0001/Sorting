@@ -3,7 +3,7 @@ import java.util.Random;
 public class QuickSort implements SortingStrategy {
     private Random rand  ;
     @Override
-    public void sort(int[] array) {
+    public void sort(int[] array, boolean showSteps) {
         rand = new Random();
         quickSort(array, 0, array.length - 1);
     }

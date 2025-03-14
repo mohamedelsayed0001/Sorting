@@ -12,14 +12,14 @@ class RadixSortTest {
 
    @BeforeEach
    void setUp() {
-      radixSort = new RadixSort(false); // false to hide steps
+      radixSort = new RadixSort();
    }
 
    @Test
    void testSortedArray() {
       int[] array = { 1, 2, 3, 4, 5 };
       int[] expected = { 1, 2, 3, 4, 5 };
-      radixSort.sort(array);
+      radixSort.sort(array, false);
       assertArrayEquals(expected, array);
    }
 
@@ -27,7 +27,7 @@ class RadixSortTest {
    void testUnsortedArray() {
       int[] array = { 59, 53, 48, 81, 92 };
       int[] expected = { 48, 53, 59, 81, 92 };
-      radixSort.sort(array);
+      radixSort.sort(array, false);
       assertArrayEquals(expected, array);
    }
 
@@ -35,7 +35,7 @@ class RadixSortTest {
    void testReverseSortedArray() {
       int[] array = { 129, 38, 37, 26, 15 };
       int[] expected = { 15, 26, 37, 38, 129 };
-      radixSort.sort(array);
+      radixSort.sort(array, false);
       assertArrayEquals(expected, array);
    }
 
@@ -43,7 +43,7 @@ class RadixSortTest {
    void testSingleElementArray() {
       int[] array = { 42 };
       int[] expected = { 42 };
-      radixSort.sort(array);
+      radixSort.sort(array, false);
       assertArrayEquals(expected, array);
    }
 
@@ -51,7 +51,7 @@ class RadixSortTest {
    void testEmptyArray() {
       int[] array = {};
       int[] expected = {};
-      radixSort.sort(array);
+      radixSort.sort(array, false);
       assertArrayEquals(expected, array);
    }
 
@@ -59,7 +59,7 @@ class RadixSortTest {
    void testArrayWithDuplicates() {
       int[] array = { 4, 22, 4, 111, 22 };
       int[] expected = { 4, 4, 22, 22, 111 };
-      radixSort.sort(array);
+      radixSort.sort(array, false);
       assertArrayEquals(expected, array);
    }
 
@@ -67,7 +67,15 @@ class RadixSortTest {
    void testArrayWithNegativeNumbers() {
       int[] array = { -5, 3, -8, 1, 2 };
       int[] expected = { -8, -5, 1, 2, 3 };
-      radixSort.sort(array);
+      radixSort.sort(array, false);
+      assertArrayEquals(expected, array);
+   }
+
+   @Test
+   void testArrayWithOnlyNegativeNumbers() {
+      int[] array = { -5, -3, -89, -153, -22 };
+      int[] expected = { -153, -89, -22, -5, -3 };
+      radixSort.sort(array, false);
       assertArrayEquals(expected, array);
    }
 
@@ -77,7 +85,7 @@ class RadixSortTest {
       int[] array = generateRandomArray(size);
 
       long startTime = System.nanoTime();
-      radixSort.sort(array);
+      radixSort.sort(array, false);
       long endTime = System.nanoTime();
 
       System.out.println(

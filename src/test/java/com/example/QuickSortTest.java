@@ -20,7 +20,7 @@ class QuickSortTest {
     void testSortedArray() {
         int[] array = {1, 2, 3, 4, 5};
         int[] expected = {1, 2, 3, 4, 5};
-        quickSort.sort(array);
+        quickSort.sort(array, false);
         assertArrayEquals(expected, array);
     }
 
@@ -28,7 +28,7 @@ class QuickSortTest {
     void testUnsortedArray() {
         int[] array = {5, 3, 8, 1, 2};
         int[] expected = {1, 2, 3, 5, 8};
-        quickSort.sort(array);
+        quickSort.sort(array, false);
         assertArrayEquals(expected, array);
     }
 
@@ -36,7 +36,7 @@ class QuickSortTest {
     void testReverseSortedArray() {
         int[] array = {9, 8, 7, 6, 5};
         int[] expected = {5, 6, 7, 8, 9};
-        quickSort.sort(array);
+        quickSort.sort(array, false);
         assertArrayEquals(expected, array);
     }
 
@@ -44,7 +44,7 @@ class QuickSortTest {
     void testSingleElementArray() {
         int[] array = {42};
         int[] expected = {42};
-        quickSort.sort(array);
+        quickSort.sort(array, false);
         assertArrayEquals(expected, array);
     }
 
@@ -52,7 +52,7 @@ class QuickSortTest {
     void testEmptyArray() {
         int[] array = {};
         int[] expected = {};
-        quickSort.sort(array);
+        quickSort.sort(array, false);
         assertArrayEquals(expected, array);
     }
 
@@ -60,7 +60,7 @@ class QuickSortTest {
     void testArrayWithDuplicates() {
         int[] array = {4, 2, 4, 1, 2};
         int[] expected = {1, 2, 2, 4, 4};
-        quickSort.sort(array);
+        quickSort.sort(array, false);
         assertArrayEquals(expected, array);
     }
     @Test
@@ -71,7 +71,7 @@ class QuickSortTest {
         QuickSort quickSort = new QuickSort();
         
         long startTime = System.nanoTime();
-        quickSort.sort(array);
+        quickSort.sort(array, false);
         long endTime = System.nanoTime();
 
         System.out.println("Execution Time for QuickSort (size " + size + "): " + (endTime - startTime) / 1_000_000.0 + " ms");
