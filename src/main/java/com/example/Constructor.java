@@ -7,7 +7,7 @@ class Constructor {
     
     public int[] read_input(){
         ArrayList<Integer> array = new ArrayList<>();
-        String path = "C:\\Users\\DELL\\OneDrive\\Desktop\\2nd term\\DSA\\labs\\lab1\\src\\main\\java\\com\\example\\input.txt";
+        String path = "src/main/java/com/example/input.txt";
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = br.readLine()) != null) {
