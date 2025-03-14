@@ -1,12 +1,11 @@
-package src.test.java.com.example;
+package com.example;
 
-import  org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import src.main.java.com.example.QuickSort;
-
-import java.util.Arrays;
 import java.util.Random;
 
 class QuickSortTest {

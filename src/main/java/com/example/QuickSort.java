@@ -1,4 +1,4 @@
-package src.main.java.com.example;
+package com.example;
 import java.util.Random;
 public class QuickSort implements SortingStrategy {
     private Random rand  ;
