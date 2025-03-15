@@ -50,33 +50,23 @@ class Sort_Array {
 
             switch (choice) {
                 case 1:
-                    sorter = new InsertionSort();
-                    startTime = System.nanoTime();
-                    steps = sorter.sort(array);
-                    endTime = System.nanoTime();
-                    System.out.println(
-                            "Execution Time for Insertion Sort : " + (endTime - startTime) / 1_000_000.0 + " ms");
+                    sorter = new InsertionSort(); 
                     break;
                 case 2:
                     sorter = new QuickSort();
-                    startTime = System.nanoTime();
-                    steps = sorter.sort(array);
-                    endTime = System.nanoTime();
-                    System.out
-                            .println("Execution Time for Quick Sort : " + (endTime - startTime) / 1_000_000.0 + " ms");
                     break;
                 case 3:
                     sorter = new RadixSort();
-                    startTime = System.nanoTime();
-                    steps = sorter.sort(array);
-                    endTime = System.nanoTime();
-                    System.out
-                            .println("Execution Time for Radix Sort : " + (endTime - startTime) / 1_000_000.0 + " ms");
                     break;
                 default:
                     System.out.println("Invalid choice. Try again.");
                     continue;
             }
+            startTime = System.nanoTime();
+            steps = sorter.sort(array);
+            endTime = System.nanoTime();
+            System.out.println(
+                    "Execution Time : " + (endTime - startTime) / 1_000_000.0 + " ms");
 
             if(showSteps) {
                 for (String step : steps) {

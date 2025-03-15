@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class Constructor {
    public int[] read_input(String filename) {
       ArrayList<Integer> array = new ArrayList<>();
-      String path = "src/main/java/com/example/";
-      path += filename;
+      String path = "C:\\Users\\DELL\\OneDrive\\Desktop\\2nd term\\DSA\\labs\\lab1\\src\\main\\java\\com\\example\\input.txt";
+      //path += filename;
       try (BufferedReader br = new BufferedReader(new FileReader(path))) {
          String line;
          while ((line = br.readLine()) != null) {
