@@ -1,13 +1,14 @@
 package com.example;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class InsertionSort implements SortingStrategy {
 
     @Override
-    public void sort(int[] array, boolean showSteps) {
+    public String[] sort(int[] array) {
+        List<String> steps = new ArrayList<>();
         int length = array.length;
-        for(int i=1; i<length;i++){
+        for (int i = 1; i < length; i++) {
             int target = array[i];
             int j = i - 1;
 
@@ -20,10 +21,12 @@ public class InsertionSort implements SortingStrategy {
             // Insert target at the correct position
             array[j + 1] = target;
 
-            // Display array if showSteps is true
-            if (showSteps) {
-                System.out.println("After inserting " + target + ":\n" + Arrays.toString(array));
+            if(length >= 1000) {
+                continue;
             }
+            
+            steps.add("After inserting " + target + ": " + Arrays.toString(array));
         }
+        return steps.toArray(new String[0]);
     }
 }

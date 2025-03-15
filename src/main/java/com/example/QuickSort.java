@@ -1,21 +1,27 @@
 package com.example;
-import java.util.Random;
+
+import java.util.*;
+
 public class QuickSort implements SortingStrategy {
-    private Random rand  ;
+    private Random rand;
+
     @Override
-    public void sort(int[] array, boolean showSteps) {
+    public String[] sort(int[] array) {
         rand = new Random();
-        quickSort(array, 0, array.length - 1);
+        List<String> steps = new ArrayList<>();
+        quickSort(array, 0, array.length - 1, steps);
+        return steps.toArray(new String[0]);
     }
-    private void quickSort(int []array,int low,int high){
+
+    private void quickSort(int[] array, int low, int high, List<String> steps) {
         if (low < high) {
-            int pivotIndex = partition(array, low, high);
-            quickSort(array, low, pivotIndex - 1); 
-            quickSort(array, pivotIndex + 1, high); 
+            int pivotIndex = partition(array, low, high, steps);
+            quickSort(array, low, pivotIndex - 1, steps);
+            quickSort(array, pivotIndex + 1, high, steps);
         }
     }
-    private int partition(int[] array, int low, int high) {
 
+    private int partition(int[] array, int low, int high, List<String> steps) {
         int randomPivotIndex = low + rand.nextInt(high - low + 1);
         int temp = array[randomPivotIndex];
         array[randomPivotIndex] = array[high];
@@ -26,17 +32,19 @@ public class QuickSort implements SortingStrategy {
         for (int j = low; j < high; j++) {
             if (array[j] < pivot) {
                 i++;
-                // Swap array[i] and array[j]
                 temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
             }
         }
-        // Swap array[i+1] and array[high] (pivot)
         temp = array[i + 1];
         array[i + 1] = array[high];
         array[high] = temp;
+
+        if(array.length <= 1000) {
+            steps.add("After partitioning with pivot " + pivot + ": " + Arrays.toString(array));
+        }
+
         return i + 1;
     }
-    
 }
