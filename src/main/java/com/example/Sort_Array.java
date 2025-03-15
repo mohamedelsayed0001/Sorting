@@ -43,11 +43,11 @@ class Sort_Array {
 
             switch (choice) {
                 case 1:
-                    // sorter = new InsertionSort();
-                    // startTime = System.nanoTime();
-                    // sorter.sort(array, showSteps);
-                    // endTime = System.nanoTime();
-                    // System.out.println("Execution Time for Insertion Sort : " + (endTime - startTime) / 1_000_000.0 + " ms");
+                     sorter = new InsertionSort();
+                     startTime = System.nanoTime();
+                     sorter.sort(array, showSteps);
+                     endTime = System.nanoTime();
+                     System.out.println("Execution Time for Insertion Sort : " + (endTime - startTime) / 1_000_000.0 + " ms");
                     break;
                 case 2:
                     sorter = new QuickSort();
