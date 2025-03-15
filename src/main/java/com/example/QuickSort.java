@@ -6,12 +6,24 @@ public class QuickSort implements SortingStrategy {
     private Random rand;
 
     @Override
+    public String getName() {
+        return "Quick Sort";
+    }
+
+    @Override
+    public String getComplexity() {
+        return "O(n log (n))";
+    }
+
+    @Override
     public String[] sort(int[] array) {
         rand = new Random();
         List<String> steps = new ArrayList<>();
         quickSort(array, 0, array.length - 1, steps);
         return steps.toArray(new String[0]);
     }
+
+
 
     private void quickSort(int[] array, int low, int high, List<String> steps) {
         if (low < high) {
