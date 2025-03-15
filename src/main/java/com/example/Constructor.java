@@ -1,19 +1,18 @@
 package com.example;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Constructor {
    public int[] read_input(String filename) {
       ArrayList<Integer> array = new ArrayList<>();
       try (BufferedReader br = new BufferedReader(new InputStreamReader(
-              getClass().getClassLoader().getResourceAsStream(filename)))) {
+              Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream(filename))))) {
          String line;
          while ((line = br.readLine()) != null) {
-
             String[] values = line.split(",");
 
             for (String value : values) {

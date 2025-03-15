@@ -1,6 +1,5 @@
 package com.example;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -14,10 +13,12 @@ class Sort_Array {
         System.out.print("Enter file : (e.g. filename.txt) ");
         String filename = scanner.nextLine();
         int[] array = constructor.read_input(filename);
+        System.out.println(Arrays.toString(array));
 
         int length = array.length;
 
         while (true) {
+            // printing menu Menu
             System.out.println("\nChoose method :");
             for (int i = 0; i < sortingStrategies.size(); i++) {
                 System.out.printf("%d- %-20s %s%n", i + 1, sortingStrategies.get(i).getName(), sortingStrategies.get(i).getComplexity());
