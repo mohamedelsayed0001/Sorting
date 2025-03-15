@@ -3,14 +3,14 @@ package com.example;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Constructor {
    public int[] read_input(String filename) {
       ArrayList<Integer> array = new ArrayList<>();
-      String path = "C:\\Users\\DELL\\OneDrive\\Desktop\\2nd term\\DSA\\labs\\lab1\\src\\main\\java\\com\\example\\input.txt";
-      //path += filename;
-      try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+      try (BufferedReader br = new BufferedReader(new InputStreamReader(
+         getClass().getClassLoader().getResourceAsStream(filename)))) {
          String line;
          while ((line = br.readLine()) != null) {
 

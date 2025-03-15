@@ -3,6 +3,15 @@ package com.example;
 import java.util.*;
 
 public class InsertionSort implements SortingStrategy {
+    @Override
+    public String getName() {
+        return "Insertion Sort";
+    }
+
+    @Override
+    public String getComplexity() {
+        return "O(n^2)";
+    }
 
     @Override
     public String[] sort(int[] array) {
