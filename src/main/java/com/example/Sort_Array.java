@@ -1,6 +1,5 @@
 package com.example;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -19,6 +18,7 @@ class Sort_Array {
 
         while (true) {
             int[] arr=  array.clone();
+            
             System.out.println("\nChoose method :");
             for (int i = 0; i < sortingStrategies.size(); i++) {
                 System.out.printf("%d- %-20s %s%n", i + 1, sortingStrategies.get(i).getName(), sortingStrategies.get(i).getComplexity());
@@ -53,7 +53,7 @@ class Sort_Array {
             String[] steps = sorter.sort(arr);
             long endTime = System.nanoTime();
             System.out.println(
-                    "Execution Time for Insertion Sort : " + (endTime - startTime) / 1_000_000.0 + " ms");
+                    "Execution Time for " + sorter.getName() + " : " + (endTime - startTime) / 1_000_000.0 + " ms");
 
             if(showSteps) {
                 for (String step : steps) {
