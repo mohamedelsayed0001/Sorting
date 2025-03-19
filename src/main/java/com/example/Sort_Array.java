@@ -53,7 +53,7 @@ class Sort_Array {
             String[] steps = sorter.sort(arr);
             long endTime = System.nanoTime();
             System.out.println(
-                    "Execution Time for Insertion Sort : " + (endTime - startTime) / 1_000_000.0 + " ms");
+                    "Execution Time : " + (endTime - startTime) / 1_000_000.0 + " ms");
 
             if(showSteps) {
                 for (String step : steps) {
