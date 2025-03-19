@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.InsertionSortTest" time="0.208" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.InsertionSortTest" time="0.231" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\DELL\OneDrive\Desktop\2nd term\DSA\labs\lab1\target\test-classes;C:\Users\DELL\OneDrive\Desktop\2nd term\DSA\labs\lab1\target\classes;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.class.path" value="C:\Users\DELL\OneDrive\Desktop\2nd term\DSA\labs\lab1\target\test-classes;C:\Users\DELL\OneDrive\Desktop\2nd term\DSA\labs\lab1\target\classes;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;C:\Users\DELL\.m2\repository\org\jfree\jfreechart\1.5.3\jfreechart-1.5.3.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\DELL\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire38864602338513262\surefirebooter-20250315165340357_3.jar C:\Users\DELL\AppData\Local\Temp\surefire38864602338513262 ????-??-??T??-??-??_???-jvmRun1 surefire-20250315165340357_1tmp surefire_0-20250315165340357_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire7518541624895152624\surefirebooter-20250319184525341_3.jar C:\Users\DELL\AppData\Local\Temp\surefire7518541624895152624 ????-??-??T??-??-??_???-jvmRun1 surefire-20250319184525341_1tmp surefire_0-20250319184525341_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\DELL\OneDrive\Desktop\2nd term\DSA\labs\lab1\target\test-classes;C:\Users\DELL\OneDrive\Desktop\2nd term\DSA\labs\lab1\target\classes;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\DELL\OneDrive\Desktop\2nd term\DSA\labs\lab1\target\test-classes;C:\Users\DELL\OneDrive\Desktop\2nd term\DSA\labs\lab1\target\classes;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;C:\Users\DELL\.m2\repository\org\jfree\jfreechart\1.5.3\jfreechart-1.5.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\DELL"/>
     <property name="user.language" value="en"/>
@@ -31,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire38864602338513262\surefirebooter-20250315165340357_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire7518541624895152624\surefirebooter-20250319184525341_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.9+9"/>
@@ -59,52 +60,52 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testEmptyArray" classname="com.example.InsertionSortTest" time="0.022">
-    <system-out><![CDATA[Empty array: 0.0085 ms
+  <testcase name="testEmptyArray" classname="com.example.InsertionSortTest" time="0.006">
+    <system-out><![CDATA[Empty array: 0.0035 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testArrayWithDuplicates" classname="com.example.InsertionSortTest" time="0.004">
-    <system-out><![CDATA[Array with duplicates : 2.5291 ms
+  <testcase name="testArrayWithDuplicates" classname="com.example.InsertionSortTest" time="0.003">
+    <system-out><![CDATA[Array with duplicates : 0.089 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testArrayWithNegativeNumbers" classname="com.example.InsertionSortTest" time="0.0">
-    <system-out><![CDATA[Array with negative elements: 0.0188 ms
+  <testcase name="testArrayWithNegativeNumbers" classname="com.example.InsertionSortTest" time="0.001">
+    <system-out><![CDATA[Array with negative elements: 0.1316 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testArrayWithOnlyNegativeNumbers" classname="com.example.InsertionSortTest" time="0.001">
-    <system-out><![CDATA[Array with only negative elements: 0.0356 ms
+  <testcase name="testArrayWithOnlyNegativeNumbers" classname="com.example.InsertionSortTest" time="0.002">
+    <system-out><![CDATA[Array with only negative elements: 0.0893 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testLargeRandomArray" classname="com.example.InsertionSortTest" time="0.013">
-    <system-out><![CDATA[Large unsorted array (10,000): 10.1771 ms
+  <testcase name="testLargeRandomArray" classname="com.example.InsertionSortTest" time="0.008">
+    <system-out><![CDATA[Large unsorted array (10,000): 6.5549 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testVeryLargeUnsortedArray" classname="com.example.InsertionSortTest" time="0.125">
-    <system-out><![CDATA[Very Large unsorted array (50,000): 118.8748 ms
+  <testcase name="testVeryLargeUnsortedArray" classname="com.example.InsertionSortTest" time="0.158">
+    <system-out><![CDATA[Very Large unsorted array (50,000): 152.6797 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testReverseSortedArray" classname="com.example.InsertionSortTest" time="0.001">
-    <system-out><![CDATA[Small reverse sorted array: 0.0228 ms
+  <testcase name="testReverseSortedArray" classname="com.example.InsertionSortTest" time="0.002">
+    <system-out><![CDATA[Small reverse sorted array: 0.0813 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testLargeReverseSortedArray" classname="com.example.InsertionSortTest" time="0.019">
-    <system-out><![CDATA[Large reverse sorted array (10,000): 17.1589 ms
+  <testcase name="testLargeReverseSortedArray" classname="com.example.InsertionSortTest" time="0.038">
+    <system-out><![CDATA[Large reverse sorted array (10,000): 37.3177 ms
 ]]></system-out>
   </testcase>
   <testcase name="testUnsortedArray" classname="com.example.InsertionSortTest" time="0.001">
-    <system-out><![CDATA[Small unsorted array: 0.0295 ms
+    <system-out><![CDATA[Small unsorted array: 0.0297 ms
 ]]></system-out>
   </testcase>
   <testcase name="testSortedArray" classname="com.example.InsertionSortTest" time="0.001">
-    <system-out><![CDATA[Small sorted array: 0.012 ms
+    <system-out><![CDATA[Small sorted array: 0.0043 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testSingleElementArray" classname="com.example.InsertionSortTest" time="0.0">
-    <system-out><![CDATA[Single element array: 8.0E-4 ms
+  <testcase name="testSingleElementArray" classname="com.example.InsertionSortTest" time="0.001">
+    <system-out><![CDATA[Single element array: 0.0021 ms
 ]]></system-out>
   </testcase>
   <testcase name="testLargeSortedArray" classname="com.example.InsertionSortTest" time="0.001">
-    <system-out><![CDATA[Large sorted array (10,000): 0.0394 ms
+    <system-out><![CDATA[Large sorted array (10,000): 0.0484 ms
 ]]></system-out>
   </testcase>
 </testsuite>
