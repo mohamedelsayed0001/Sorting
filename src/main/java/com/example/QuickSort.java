@@ -53,7 +53,7 @@ public class QuickSort implements SortingStrategy {
         array[i + 1] = array[high];
         array[high] = temp;
 
-        if(array.length <= 1000) {
+        if(array.length <= 99) {
             steps.add("After partitioning with pivot " + pivot + ": " + Arrays.toString(array));
         }
 

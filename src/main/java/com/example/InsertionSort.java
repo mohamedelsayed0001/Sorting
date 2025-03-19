@@ -30,7 +30,7 @@ public class InsertionSort implements SortingStrategy {
             // Insert target at the correct position
             array[j + 1] = target;
 
-            if(length >= 1000) {
+            if(length >= 99) {
                 continue;
             }
             
